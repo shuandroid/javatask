@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	<servlet>
+     <servlet-name>MyServlet</servlet-name><!--定义servlet的名称 -->
+     <servlet-class>myservlet.MyServlet</servlet-class><!--对应servlet所属的文件名 -->
+   </servlet>
+ 
+   <servlet-mapping> <!-- 建立servlet与action之间的映射 -->
+     <servlet-name>MyServlet</servlet-name>  <!-- 映射中servlet的名称，已定义 -->
+     <url-pattern>/Mychange.jsp</url-pattern>    <!-- 所对应的action -->
+   </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>MyJsp.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
